@@ -1,8 +1,11 @@
+// Test code: unwrap is the idiomatic way to assert assumptions.
+#![allow(clippy::unwrap_used)]
+
 use std::fs;
 use tempfile::TempDir;
 
-use pid_manager::pidfile::PidFile;
 use pid_manager::guard::DaemonGuard;
+use pid_manager::pidfile::PidFile;
 
 #[test]
 fn test_create_read_remove_roundtrip() {
