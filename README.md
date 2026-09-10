@@ -1,5 +1,9 @@
 # pid-manager
 
+[![docs.rs](https://docs.rs/pid-manager/badge.svg)](https://docs.rs/pid-manager)
+[![crates.io](https://img.shields.io/crates/v/pid-manager.svg)](https://crates.io/crates/pid-manager)
+[![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE)
+
 PID file management with RAII cleanup and process liveness checks.
 
 ## Features
