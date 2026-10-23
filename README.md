@@ -1,4 +1,5 @@
 # pid-manager
+[![Estate integration](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml/badge.svg)](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml)
 
 [![docs.rs](https://docs.rs/pid-manager/badge.svg)](https://docs.rs/pid-manager)
 [![crates.io](https://img.shields.io/crates/v/pid-manager.svg)](https://crates.io/crates/pid-manager)
