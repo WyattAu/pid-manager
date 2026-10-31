@@ -1,10 +1,10 @@
-# Requirements — pid-manager
+# Requirements: pid-manager
 
 Numbered, testable requirements. Every requirement maps to at least one named
 test; every security-relevant test cites at least one requirement. Threat
 IDs reference `THREAT-MODEL.md`.
 
-Scope note: `pid-manager` provides PID file management — atomic creation,
+Scope note: `pid-manager` provides PID file management; atomic creation,
 defensive parsing, process liveness checks, and RAII cleanup via
 `DaemonGuard`.
 
@@ -23,7 +23,7 @@ defensive parsing, process liveness checks, and RAII cleanup via
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | REQ-PM-100 | Malformed PID-file content (non-numeric, empty, huge) produces a typed error, never a panic or a bogus liveness verdict (T1) | MUST |
-| REQ-PM-101 | A stale PID file whose recorded PID is dead does not block startup — liveness is re-checked, not trusted from the file (T1, T2) | MUST |
+| REQ-PM-101 | A stale PID file whose recorded PID is dead does not block startup; liveness is re-checked, not trusted from the file (T1, T2) | MUST |
 | REQ-PM-102 | Concurrent creators cannot silently overwrite each other: the second creator gets an error (T5) | MUST |
 
 ## Robustness

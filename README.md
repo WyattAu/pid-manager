@@ -9,9 +9,9 @@ PID file management with RAII cleanup and process liveness checks.
 
 ## Features
 
-- **PidFile** — Create, read, and manage PID files with automatic cleanup
-- **DaemonGuard** — RAII guard for daemon process lifecycle
-- **is_running** — Check if a process is alive via signal probe
+- **PidFile**; Create, read, and manage PID files with automatic cleanup
+- **DaemonGuard**; RAII guard for daemon process lifecycle
+- **is_running**; Check if a process is alive via signal probe
 - Automatic stale PID detection and cleanup
 - Typed errors with `thiserror`
 
@@ -69,7 +69,7 @@ pidfile.remove()?;
 ### DaemonGuard
 
 ```rust
-// RAII guard — writes PID file, removes on drop
+// RAII guard; writes PID file, removes on drop
 let guard = DaemonGuard::new("/var/run/daemon.pid")?;
 
 // Check if another instance is running
